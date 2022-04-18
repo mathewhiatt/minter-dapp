@@ -1,4 +1,4 @@
-const contractAddress = "0x573Fa37630af1D5B19658502305952de627b21cD"; //Replace with your own contract address
+const contractAddress = "0x18a711fB280c6469e65bC43018FBf48daaf24243"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to Cringe Comics!";
