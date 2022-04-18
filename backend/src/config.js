@@ -47,12 +47,12 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'polygon'; // only rinkeby or polygon
+const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Cringe Comics';
+const CONTRACT_NAME = 'CringeComics';
 const CONTRACT_SYMBOL = 'CC';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xC2454AF3Fcfaf153B31Aaf14D43d2bDddE47be1C';
 const TREASURY_ADDRESS = '0xC2454AF3Fcfaf153B31Aaf14D43d2bDddE47be1C';
 const MAX_SUPPLY = 1000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
@@ -74,7 +74,7 @@ const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "What comic will make you cringe?"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreibrzs7mkqd6fmulrnfdoda6jiuewo3gg6mjnshjcrnttxfzxqmyqa"; // Replace with your generic image that will display for all NFTs pre-reveal.
@@ -94,12 +94,12 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "CC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://artofalgorithm.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0xC2454AF3Fcfaf153B31Aaf14D43d2bDddE47be1C",
       share: 100,
     },
   ],
